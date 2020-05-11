@@ -1,0 +1,250 @@
+@font-face
+    font-family: Montserrat 
+    src: url(fonts/Montserrat-black.ttf)
+    font-family: Raleway
+    src: url(fonts/Raleway-Black.ttf)
+
+$width: 1920px
+
+body
+    margin: 0    
+
+.container
+    width: $width
+    margin: 0 auto
+    
+.main-header
+    background-image: url(../img/bgphoto.jpg)
+    background-size: cover
+    width: 100%
+    min-height: 1024px
+    padding: 40px 0 40px 0
+    box-sizing: border-box
+        
+    .main-header-wrp
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+    
+    .main-header-logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 181px
+        text-decoration: none
+        color: #fff
+        margin-right: 11.4%
+                
+        .main-header-logo-pic
+            fill: currentColor
+            
+        .main-header-logo-text
+            font-family: Raleway
+            font-size: 34px
+            font-weight: 400
+            letter-spacing: -1.36px
+            text-align: right
+            
+    .main-header-logo:hover
+        color: #998675
+            
+    .main-header-menu
+        display: flex
+        margin: 0
+        padding: 0
+        
+        .main-header-menu-link
+            margin-right: 30px
+            text-decoration: none
+            font-family: Montserrat
+            font-size: 14px
+            font-weight: 300
+            text-align: left
+            color: #fff
+              
+        .main-header-menu-link:hover
+            color: #c7b299  
+            
+        .main-header-menu-link:active
+            color: #fff
+            
+        .main-header-menu-link:last-child
+            margin-right: 68px
+            
+    .wrp-cart-search
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 70px
+        
+        .main-header-cart
+            display: block
+            width: 18px
+            height: 24px
+            background-image: url('../img/icon-cart.png')
+            background-size: contain
+            background-repeat: no-repeat
+            
+        .main-header-cart:hover
+            background-color: rgba(100, 100, 100, 0.5)
+                
+        .main-header-search
+            width: 24px
+            height: 24px
+            outline: none
+            background-color: rgba(0, 0, 0, 0.0)
+            background-image: url('../img/icon-search.png')
+            background-size: contain
+            background-repeat: no-repeat
+            border: none
+            color: #fff
+            
+        .main-header-search:focus
+            width: 200px
+            transition: width 1s ease-out
+            background-position: right
+            background-color: #998675
+        
+        .main-header-search:hover
+            background-color: rgba(100, 100, 100, 0.5)
+                       
+    .main-header-slider
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        width: 100%
+        min-height: 888px
+        margin: 0 auto
+        position: relative
+                
+        .main-header-slider-wrp
+            width: 30.7%
+            
+            .main-header-slider-h2
+                display: block
+                font-family: Raleway
+                font-size: 36px    
+                font-weight: 500
+                text-align: center
+                color: #ffffff
+            
+            .main-header-slider-h1
+                display: block
+                font-family: Raleway
+                font-size: 52px
+                font-weight: 800
+                text-align: center
+                color: #ffffff
+            
+            .main-header-slider-text
+                font-family: Montserrat
+                font-size: 16px
+                font-weight: 300
+                text-align: center
+                color: #ffffff
+                line-height: 1.5
+        
+            .main-header-slider-btn
+                display: block
+                width: 28.86%
+                min-height: 53px
+                margin: 52px auto 0 auto
+                box-sizing: border-box
+                padding: 21px 38px
+                border-radius: 3px
+                box-shadow: inset 0px -3px 0 0 #736357
+                background-color: #998675
+                font-family: Raleway
+                font-size: 14px
+                font-weight: 800
+                color: #fff
+                text-transform: uppercase
+                outline: none
+                border: none
+                
+            .main-header-slider-btn:hover
+                background-color: #c7b299
+                color: black
+            
+        .main-header-slider-pag            
+            width: 105px
+            display: flex
+            justify-content: space-between
+            position: absolute
+            bottom: 0
+            
+            .main-header-slider-pag-item
+                display: block
+                width: 11px
+                height: 11px
+                border-radius: 50%
+                background-color: #d3c1ad
+                border: 2px solid transparent
+            
+            .main-header-slider-pag-item:hover
+                background-color: transparent
+                border: 2px solid #d3c1ad
+        
+            .main-header-slider-pag-item-active
+                background-color: transparent
+                border: 2px solid #d3c1ad
+                
+        .slider-arr
+            display: block
+            width: 40px
+            height: 73px
+            position: relative
+            
+        .slider-arr:nth-of-type(1):after
+            content: ""
+            display: inline-block
+            width: 52px
+            height: 52px
+            border-top: 2px solid #d3c1ad
+            border-left: 2px solid #d3c1ad
+            transform: rotate(-45deg)
+            position: absolute
+            top: 10px
+            left: -25px
+            
+        .slider-arr:nth-of-type(1):hover:after
+            border-top: 2px solid #c7b299
+            border-left: 2px solid #c7b299
+            
+        .slider-arr:nth-of-type(2):after
+            content: ""
+            display: inline-block
+            width: 52px
+            height: 52px
+            border-top: 2px solid #d3c1ad
+            border-right: 2px solid #d3c1ad
+            transform: rotate(45deg)
+            position: absolute
+            top: 10px
+            left: -25px
+            
+        .slider-arr:nth-of-type(2):hover:after
+            border-top: 2px solid #c7b299
+            border-right: 2px solid #c7b299
+        
+            
+        .slider-arr:nth-of-type(1)
+            margin: 0 24.8% 0 0
+        
+        .slider-arr:nth-of-type(2)
+            margin: 0 0 0 24.8%
+            
+                
+        
+        
+       
+            
+
+
+    
+
+
+
+
