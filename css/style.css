@@ -1,8 +1,32 @@
 @font-face {
   font-family: Montserrat;
-  src: url(fonts/Montserrat-black.ttf);
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Montserrat-Regular.ttf);
   font-family: Raleway;
-  src: url(fonts/Raleway-Black.ttf); }
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Raleway-Regular.ttf);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Raleway-Medium.ttf);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/Raleway-SemiBold.ttf);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/Raleway-ExtraBold.ttf);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf); }
 body {
   margin: 0; }
 
@@ -13,6 +37,8 @@ body {
 .main-header {
   background-image: url(../img/bgphoto.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
   width: 100%;
   min-height: 1024px;
   padding: 40px 0 40px 0;
@@ -22,24 +48,24 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto; }
-  .main-header .main-header-logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 181px;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 11.4%; }
-    .main-header .main-header-logo .main-header-logo-pic {
+    .main-header .main-header-wrp .main-header-logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 181px;
+      text-decoration: none;
+      color: #fff;
+      margin-right: 11.4%; }
+    .main-header .main-header-wrp .main-header-logo-pic {
       fill: currentColor; }
-    .main-header .main-header-logo .main-header-logo-text {
+    .main-header .main-header-wrp .main-header-logo-text {
       font-family: Raleway;
       font-size: 34px;
       font-weight: 400;
       letter-spacing: -1.36px;
       text-align: right; }
-  .main-header .main-header-logo:hover {
-    color: #998675; }
+    .main-header .main-header-wrp .main-header-logo:hover {
+      color: #998675; }
   .main-header .main-header-menu {
     display: flex;
     margin: 0;
@@ -197,5 +223,290 @@ body {
       margin: 0 24.8% 0 0; }
     .main-header .main-header-slider .slider-arr:nth-of-type(2) {
       margin: 0 0 0 24.8%; }
+
+.main-content .direct {
+  width: 100%;
+  margin: 0 auto; }
+  .main-content .direct .wrp-direct {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0 80px 0;
+    box-sizing: border-box; }
+    .main-content .direct .wrp-direct .direct-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 14%;
+      padding: 10px 10px 0 10px;
+      box-sizing: border-box; }
+      .main-content .direct .wrp-direct .direct-item .direct-icon {
+        display: block;
+        fill: #555555;
+        margin: 0 0 30px 0; }
+      .main-content .direct .wrp-direct .direct-item .direct-title {
+        display: block;
+        width: 100%;
+        margin: 0 0 19px 0;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 600;
+        color: #555555; }
+      .main-content .direct .wrp-direct .direct-item .direct-text {
+        margin: 0 0 30px 0;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.71;
+        color: #8c8c8c; }
+    .main-content .direct .wrp-direct .direct-item:after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      background-color: #f1eee9; }
+    .main-content .direct .wrp-direct .direct-item:hover .direct-icon {
+      fill: #c7b299; }
+    .main-content .direct .wrp-direct .direct-item:hover .direct-title {
+      color: #c7b299; }
+    .main-content .direct .wrp-direct .direct-item:hover:after {
+      background-color: #c7b299; }
+  .main-content .direct .wrp-direct-desc {
+    width: 100%;
+    min-height: 700px;
+    background-color: #fbfaf8;
+    padding: 82px 0 0 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative; }
+    .main-content .direct .wrp-direct-desc .direct-desc-title {
+      display: block;
+      width: 37.4%;
+      margin: 0 auto 22px;
+      text-align: center;
+      font-family: Raleway;
+      font-size: 30px;
+      font-weight: 600;
+      color: #555555; }
+    .main-content .direct .wrp-direct-desc .direct-desc-txt {
+      width: 37.4%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: #8c8c8c; }
+    .main-content .direct .wrp-direct-desc .wrp-direct-desc-img {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center; }
+      .main-content .direct .wrp-direct-desc .wrp-direct-desc-img .direct-desc-img {
+        display: block;
+        width: 40.1%; }
+      .main-content .direct .wrp-direct-desc .wrp-direct-desc-img .direct-desc-img:nth-of-type(1) {
+        height: 400px;
+        position: absolute;
+        bottom: 0;
+        left: 18%;
+        z-index: 1; }
+      .main-content .direct .wrp-direct-desc .wrp-direct-desc-img .direct-desc-img:nth-of-type(2) {
+        margin: 0 auto;
+        height: 482px;
+        position: absolute;
+        bottom: 0;
+        z-index: 2; }
+      .main-content .direct .wrp-direct-desc .wrp-direct-desc-img .direct-desc-img:nth-of-type(3) {
+        height: 400px;
+        position: absolute;
+        bottom: 0;
+        right: 18%;
+        z-index: 1; }
+.main-content .purchase {
+  background-image: linear-gradient(to right, #211b19, #4e3427);
+  width: 100%;
+  min-height: 150px;
+  margin: 0 auto;
+  padding: 50px 19.5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .main-content .purchase .wrp-purchase {
+    width: 530px; }
+    .main-content .purchase .wrp-purchase .purchase-title {
+      margin: 0 0 8px 0;
+      font-family: Raleway;
+      font-size: 28px;
+      text-align: left;
+      color: #fff; }
+    .main-content .purchase .wrp-purchase .purchase-txt {
+      margin: 0;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: left;
+      color: #615855; }
+  .main-content .purchase .purchase-btn {
+    display: block;
+    width: 170px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    background-color: #998675;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    border: none; }
+  .main-content .purchase .purchase-btn:hover {
+    background-color: #c7b299;
+    color: black; }
+.main-content .latest-proj {
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+  box-sizing: border-box; }
+  .main-content .latest-proj .latest-proj-title {
+    display: block;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #555555;
+    margin: 0 0 23px 0; }
+  .main-content .latest-proj .latest-proj-txt {
+    margin: 0 auto 40px;
+    width: 37.4%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    text-align: center;
+    color: #8c8c8c; }
+  .main-content .latest-proj .latest-proj-menu {
+    width: 31.51%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .main-content .latest-proj .latest-proj-menu .latest-proj-menu-btn {
+      display: block;
+      padding: 10px 20px 8px 20px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      background-color: #fff;
+      text-align: center;
+      outline: none;
+      border: 1px solid #ebebeb;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 300;
+      color: #8c8c8c; }
+    .main-content .latest-proj .latest-proj-menu .latest-proj-menu-btn:hover {
+      background-color: #998675;
+      color: #fff; }
+  .main-content .latest-proj .wrp-latest-proj {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 784px;
+    padding: 40px 19.6%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center; }
+    .main-content .latest-proj .wrp-latest-proj .latest-proj-item {
+      width: 370px;
+      min-height: 4.8%;
+      position: relative; }
+      .main-content .latest-proj .wrp-latest-proj .latest-proj-item .latest-proj-item-img {
+        display: block;
+        min-height: 3.4%; }
+      .main-content .latest-proj .wrp-latest-proj .latest-proj-item .latest-proj-item-title {
+        display: block;
+        text-align: left;
+        padding: 26px 0 0 28px;
+        box-sizing: border-box;
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 500;
+        color: #c7b299;
+        background-color: #fbfaf8; }
+      .main-content .latest-proj .wrp-latest-proj .latest-proj-item .latest-proj-item-txt {
+        display: block;
+        text-align: left;
+        padding: 10px 0 23px 28px;
+        box-sizing: border-box;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        color: #d1d1d1;
+        background-color: #fbfaf8; }
+    .main-content .latest-proj .wrp-latest-proj .latest-proj-item:before {
+      content: "";
+      border: 15px solid transparent;
+      border-bottom: 10px solid #fbfaf8;
+      position: absolute;
+      top: 212px;
+      left: 19px; }
+    .main-content .latest-proj .wrp-latest-proj .latest-proj-item:hover .latest-proj-item-title {
+      background-color: #362f2d;
+      color: #ffffff; }
+    .main-content .latest-proj .wrp-latest-proj .latest-proj-item:hover .latest-proj-item-txt {
+      background-color: #362f2d;
+      color: #c7b299; }
+    .main-content .latest-proj .wrp-latest-proj .latest-proj-item:hover .latest-proj-item-img {
+      opacity: 0.8; }
+    .main-content .latest-proj .wrp-latest-proj .latest-proj-item:hover:before {
+      border-bottom: 10px solid #362f2d; }
+    .main-content .latest-proj .wrp-latest-proj .latest-proj-item:hover .latest-proj-item-title:after {
+      display: block;
+      width: 26px;
+      height: 26px;
+      content: "";
+      background-image: url(../img/link.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 106px;
+      left: 145px; }
+    .main-content .latest-proj .wrp-latest-proj .latest-proj-item:hover .latest-proj-item-title:before {
+      display: block;
+      width: 26px;
+      height: 26px;
+      content: "";
+      background-image: url(../img/lupa.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 106px;
+      right: 145px; }
+  .main-content .latest-proj .latest-proj-btn {
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    background-color: #998675;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    border: none; }
+  .main-content .latest-proj .latest-proj-btn:hover {
+    background-color: #c7b299;
+    color: black; }
 
 /*# sourceMappingURL=style.css.map */
