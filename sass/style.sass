@@ -1,113 +1,171 @@
 @font-face
-    font-family: Montserrat 
-    src: url(fonts/Montserrat-black.ttf)
-    font-family: Raleway
-    src: url(fonts/Raleway-Black.ttf)
+    font-family: Montserrat, sans-serif 
+    font-style: normal
+    font-weight: 300
+    src: url(../fonts/Montserrat-Light.ttf)
+
+@font-face
+    font-family: Montserrat, sans-serif 
+    font-style: normal
+    font-weight: 400
+    src: url(../fonts/Montserrat-Regular.ttf)
+
+@font-face
+    font-family: Raleway, sans-serif
+    font-style: normal
+    font-weight: 400
+    src: url(../fonts/Raleway-Regular.ttf)
+
+@font-face
+    font-family: Raleway, sans-serif
+    font-style: normal
+    font-weight: 500
+    src: url(../fonts/Raleway-Medium.ttf)
+
+@font-face
+    font-family: Raleway, sans-serif
+    font-style: normal
+    font-weight: 600
+    src: url(../fonts/Raleway-SemiBold.ttf)
+
+@font-face
+    font-family: Raleway, sans-serif
+    font-style: normal
+    font-weight: 800
+    src: url(../fonts/Raleway-ExtraBold.ttf)
+
+@font-face
+    font-family: Roboto, sans-serif
+    font-style: normal
+    font-weight: 400
+    src: url(../fonts/Roboto-Regular.ttf)
 
 $width: 1920px
 
-body
-    margin: 0    
 
 .container
-    width: $width
+    width: 100%
     margin: 0 auto
     
 .main-header
     background-image: url(../img/bgphoto.jpg)
     background-size: cover
+    background-repeat: no-repeat
+    background-color: black
     width: 100%
     min-height: 1024px
-    padding: 40px 0 40px 0
-    box-sizing: border-box
+    padding: 2.08% 0 2.08% 0
+    box-sizing: border-box    
         
     .main-header-wrp
+        width: 100%
         display: flex
         justify-content: center
         align-items: center
         margin: 0 auto
     
-    .main-header-logo
-        display: flex
-        justify-content: space-between
-        align-items: center
-        width: 181px
-        text-decoration: none
-        color: #fff
-        margin-right: 11.4%
+        .main-header-logo            
+            display: flex
+            justify-content: space-between
+            align-items: center
+            text-decoration: none
+            color: #fff
+            margin-right: 11.4%
                 
-        .main-header-logo-pic
-            fill: currentColor
+            .main-header-logo-pic
+                fill: currentColor
             
-        .main-header-logo-text
-            font-family: Raleway
-            font-size: 34px
-            font-weight: 400
-            letter-spacing: -1.36px
-            text-align: right
+            .main-header-logo-text
+                font-family: Raleway
+                font-size: 34px
+                font-weight: 400
+                letter-spacing: -1.36px
+                text-align: right
             
-    .main-header-logo:hover
-        color: #998675
+        .main-header-logo:hover
+            color: #998675
             
+        .main-header-logo:active
+            color: #fff
+    
+    .main-menu-check-mobile
+        display: none
+        
     .main-header-menu
         display: flex
-        margin: 0
+        justify-content: space-between
+        margin: 0 2% 0 0
         padding: 0
+        width: 40%
         
         .main-header-menu-link
-            margin-right: 30px
             text-decoration: none
             font-family: Montserrat
             font-size: 14px
             font-weight: 300
-            text-align: left
+            text-align: center
             color: #fff
               
         .main-header-menu-link:hover
             color: #c7b299  
             
         .main-header-menu-link:active
-            color: #fff
-            
-        .main-header-menu-link:last-child
-            margin-right: 68px
+            color: #fff       
             
     .wrp-cart-search
         display: flex
-        justify-content: space-between
+        justify-content: space-between        
         align-items: center
-        width: 70px
-        
+        width: 3.65%
+                
         .main-header-cart
             display: block
-            width: 18px
-            height: 24px
-            background-image: url('../img/icon-cart.png')
-            background-size: contain
-            background-repeat: no-repeat
+                        
+            .main-header-cart-icon
+                fill: #fff
             
-        .main-header-cart:hover
-            background-color: rgba(100, 100, 100, 0.5)
+            .main-header-cart-icon:hover
+                fill: #c7b299
+            
+            .main-header-cart-icon:active
+                fill: #fff
+                    
+        .main-header-search-form
+            display: block
+            position: relative            
+            
+            .search-icon-form-label 
+                display: block  
                 
-        .main-header-search
-            width: 24px
-            height: 24px
-            outline: none
-            background-color: rgba(0, 0, 0, 0.0)
-            background-image: url('../img/icon-search.png')
-            background-size: contain
-            background-repeat: no-repeat
-            border: none
-            color: #fff
-            
-        .main-header-search:focus
-            width: 200px
-            transition: width 1s ease-out
-            background-position: right
-            background-color: #998675
-        
-        .main-header-search:hover
-            background-color: rgba(100, 100, 100, 0.5)
+                .search-icon-form-svg                    
+                    fill: #fff
+                    
+                .search-icon-form-svg:hover
+                    fill: #c7b299 
+               
+                .search-icon-form-svg:active
+                    fill: #fff           
+                
+            .main-header-search
+                outline: none
+                box-sizing: border-box
+                background-color: transparent
+                border: none
+                position: absolute
+                top: 40px
+                left: -125px
+                color: #fff
+                font-size: 16px
+                font-family: Montserrat
+                text-transform: capitalize                 
+                                        
+            .main-header-search:focus 
+                display: block
+                padding: 5px
+                width: 150px
+                min-height: 20px
+                transition: width 1s ease
+                border: 2px solid #fff        
                        
     .main-header-slider
         display: flex
@@ -152,7 +210,7 @@ body
                 min-height: 53px
                 margin: 52px auto 0 auto
                 box-sizing: border-box
-                padding: 21px 38px
+                padding: 3% 0 
                 border-radius: 3px
                 box-shadow: inset 0px -3px 0 0 #736357
                 background-color: #998675
@@ -161,15 +219,22 @@ body
                 font-weight: 800
                 color: #fff
                 text-transform: uppercase
+                text-align: center
                 outline: none
                 border: none
                 
             .main-header-slider-btn:hover
                 background-color: #c7b299
                 color: black
+                box-shadow: inset 0px -3px 0 0 #c7b299                
+                
+            .main-header-slider-btn:active
+                background-color: #998675
+                color: #fff
+                box-shadow: inset 0px -3px 0 0 #736357
             
         .main-header-slider-pag            
-            width: 105px
+            width: 5.5%
             display: flex
             justify-content: space-between
             position: absolute
@@ -210,8 +275,12 @@ body
             left: -25px
             
         .slider-arr:nth-of-type(1):hover:after
-            border-top: 2px solid #c7b299
-            border-left: 2px solid #c7b299
+            border-top: 2px solid #fff
+            border-left: 2px solid #fff
+        
+        .slider-arr:nth-of-type(1):active:after
+            border-top: 2px solid #d3c1ad
+            border-left: 2px solid #d3c1ad
             
         .slider-arr:nth-of-type(2):after
             content: ""
@@ -226,8 +295,12 @@ body
             left: -25px
             
         .slider-arr:nth-of-type(2):hover:after
-            border-top: 2px solid #c7b299
-            border-right: 2px solid #c7b299
+            border-top: 2px solid #fff
+            border-right: 2px solid #fff
+        
+        .slider-arr:nth-of-type(2):active:after
+            border-top: 2px solid #d3c1ad
+            border-right: 2px solid #d3c1ad
         
             
         .slider-arr:nth-of-type(1)
@@ -236,15 +309,1427 @@ body
         .slider-arr:nth-of-type(2)
             margin: 0 0 0 24.8%
             
+.main-content
+    width: 100%    
+    
+    .direct
+        width: 100%
+        margin: 0 auto
                 
-        
-        
-       
+        .wrp-direct
+            display: flex
+            justify-content: center
+            width: 100%
+            margin: 0 auto
+            padding: 80px 0 80px 0
+            box-sizing: border-box
             
-
+            .direct-item
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                width: 14%
+                padding: 10px 10px 0 10px
+                box-sizing: border-box
+                text-decoration: none
+                                
+                .direct-icon
+                    display: block
+                    fill: #555555
+                    margin: 0 0 30px 0
+                
+                .direct-title
+                    display: block
+                    width: 100%
+                    margin: 0 0 19px 0
+                    text-align: center
+                    font-family: Raleway
+                    font-size: 22px
+                    font-weight: 600
+                    color: #555555
+                    
+                .direct-text
+                    margin: 0 0 30px 0
+                    text-align: center
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 300
+                    line-height: 1.71
+                    color: #8c8c8c
+                    
+            .direct-item:after
+                content: ""
+                display: block
+                width: 70px
+                height: 3px
+                background-color: #f1eee9
+            
+            .direct-item:hover .direct-icon
+                fill: #c7b299
+            
+            .direct-item:hover .direct-title
+                color: #c7b299
+                
+            .direct-item:hover:after
+                background-color: #c7b299
+                
+        .wrp-direct-desc
+            width: 100%
+            min-height: 700px
+            background-color: #fbfaf8
+            padding: 82px 0 0 0
+            box-sizing: border-box
+            margin: 0 auto
+            position: relative
+            
+            .direct-desc-title
+                display: block
+                width: 37.4%
+                margin: 0 auto 22px
+                text-align: center
+                font-family: Raleway
+                font-size: 30px
+                font-weight: 600
+                color: #555555
+                
+            .direct-desc-txt
+                width: 37.4%
+                margin: 0 auto
+                text-align: center
+                font-family: Montserrat
+                font-size: 16px
+                font-weight: 300
+                line-height: 1.75
+                color: #8c8c8c
+            
+            .wrp-direct-desc-img
+                width: 100%
+                margin: 0 auto    
+                display: flex
+                justify-content: center
+                
+                .direct-desc-img
+                    display: block
+                    width: 40.1%                   
+            
+                .direct-desc-img:nth-of-type(1)
+                    position: absolute
+                    bottom: 0
+                    left: 18%
+                    z-index: 1
+            
+                .direct-desc-img:nth-of-type(2)
+                    margin: 0 auto
+                    position: absolute
+                    bottom: 0
+                    z-index: 2                
+                
+                .direct-desc-img:nth-of-type(3)
+                    position: absolute
+                    bottom: 0
+                    right: 18%
+                    z-index: 1
+                    
+    .purchase
+        background-image: linear-gradient(to right, #211b19, #4e3427)
+        width: 100%
+        min-height: 150px
+        margin: 0 auto
+        padding: 2.6% 19.5% 
+        box-sizing: border-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        
+        .wrp-purchase        
+                    
+            .purchase-title
+                margin: 0 0 8px 0
+                font-family: Raleway
+                font-size: 28px
+                text-align: left
+                color: #fff           
+            
+            .purchase-txt
+                margin: 0
+                font-family: Montserrat
+                font-size: 18px
+                font-weight: 300
+                text-align: left
+                color: #615855
+            
+        .purchase-btn
+            display: block
+            width: 170px
+            min-height: 50px
+            border-radius: 3px
+            box-shadow: inset 0px -3px 0 0 #736357
+            background-color: #998675
+            font-family: Raleway
+            font-size: 14px
+            font-weight: 800
+            color: #fff
+            text-transform: uppercase
+            text-align: center
+            outline: none
+            border: none
+            
+        .purchase-btn:hover        
+            background-color: #c7b299
+            color: black
+            box-shadow: inset 0px -3px 0 0 #c7b299
+            
+        .purchase-btn:active       
+            background-color: #998675
+            color: #fff
+            box-shadow: inset 0px -3px 0 0 #736357
+    
+    .latest-proj
+        width: 100%
+        margin: 0 auto
+        padding: 4.16% 0
+        box-sizing: border-box
+        
+        .latest-proj-title
+            display: block
+            font-family: Raleway
+            font-size: 30px
+            font-weight: 600
+            text-align: center
+            color: #555555
+            margin: 0 auto 1.2%
+        
+        .latest-proj-txt
+            margin: 0 auto 2.08%
+            width: 37.4%
+            font-family: Montserrat
+            font-size: 16px
+            font-weight: 300
+            line-height: 1.75
+            text-align: center
+            color: #8c8c8c
+            
+        .latest-proj-menu
+            width: 28%
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            
+            .latest-proj-menu-btn
+                display: block
+                padding: 1.5%
+                box-sizing: border-box
+                margin-right: 1.5%
+                border-radius: 3px
+                background-color: #fff
+                text-align: center
+                outline: none
+                border: 1px solid #ebebeb
+                font-family: Montserrat
+                font-size: 14px
+                font-weight: 300
+                color: #8c8c8c
+                
+            .latest-proj-menu-btn:last-of-type
+                margin-right: 0
+            
+            .latest-proj-menu-btn:hover
+                background-color: #998675
+                color: #fff
+                
+            .latest-proj-menu-btn:active       
+                background-color: #fff
+                color: #8c8c8c
+                
+            
+        .wrp-latest-proj
+            width: 100%
+            margin: 0 auto
+            min-height: 784px
+            padding: 40px 19.6%
+            box-sizing: border-box
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-content: space-between
+            align-items: center
+            
+            .latest-proj-item
+                width: 370px
+                min-height: 4.8%
+                margin: 0 auto
+                position: relative                
+                
+                .latest-proj-item-mask
+                    display: none
+                    justify-content: space-between
+                    width: 80px
+                    height: 26px                    
+                    position: absolute
+                    top: 32%
+                    left: 35%
+                                        
+                    .latest-proj-item-mask-link
+                        display: block
+                        width: 26px
+                        height: 26px
+                        text-decoration: none
+                        
+                        .latest-proj-item-mask-svg
+                            fill: #fff
+                            
+                    .latest-proj-item-mask-link:hover .latest-proj-item-mask-svg
+                            fill: #c7b299
+                        
+                    .latest-proj-item-mask-link:active .latest-proj-item-mask-svg
+                            fill: #fff
+                    
+                .latest-proj-item-img
+                    display: block
+                    min-height: 3.4% 
+                    
+                .wrp-latest-proj-button
+                    position: relative
+                                    
+                    .latest-proj-item-title
+                        display: block
+                        text-align: left
+                        padding: 26px 0 0 28px
+                        box-sizing: border-box
+                        font-family: Raleway
+                        font-size: 20px
+                        font-weight: 500
+                        color: #c7b299
+                        background-color: #fbfaf8               
+                    
+                    .latest-proj-item-txt
+                        display: block
+                        text-align: left
+                        padding: 10px 0 23px 28px
+                        box-sizing: border-box
+                        font-family: Montserrat
+                        font-size: 14px
+                        font-weight: 300
+                        color: #d1d1d1
+                        background-color: #fbfaf8
+                        
+                .wrp-latest-proj-button:before
+                    content: ""
+                    border: 15px solid transparent
+                    border-bottom: 10px solid #fbfaf8
+                    position: absolute
+                    top: -25px
+                    left: 19px                
+                 
+            .latest-proj-item:hover .latest-proj-item-title
+                background-color: #362f2d
+                color: #ffffff
+            
+            .latest-proj-item:hover .latest-proj-item-txt
+                background-color: #362f2d
+                color: #c7b299
+                
+            .latest-proj-item:hover .latest-proj-item-img
+                filter: brightness(35%)
+                
+            .latest-proj-item:hover .wrp-latest-proj-button:before
+                border-bottom: 10px solid #362f2d
+            
+            .latest-proj-item:hover .latest-proj-item-mask
+                display: flex      
+                                
+        .latest-proj-btn
+            display: block
+            margin: 0 auto
+            width: 170px
+            height: 50px
+            border-radius: 3px
+            box-shadow: inset 0px -3px 0 0 #736357
+            background-color: #998675
+            font-family: Raleway
+            font-size: 14px
+            font-weight: 800
+            color: #fff
+            text-transform: uppercase
+            text-align: center
+            outline: none
+            border: none
+            
+        .latest-proj-btn:hover        
+            background-color: #c7b299
+            color: black
+            box-shadow: inset 0px -3px 0 0 #c7b299
+            
+        .latest-proj-btn:active       
+            background-color: #998675
+            color: #fff
+            box-shadow: inset 0px -3px 0 0 #736357
+            
+    .present
+        width: 100%
+        margin: 0 auto
+        overflow: hidden
+        min-height: 705px
+        position: relative
+                
+        .present-video
+            width: 100%
+            height: 100%
+            position: absolute
+            z-index: 1
+            
+        .wrp-present
+            display: flex            
+            justify-content: center
+            align-items: center
+            flex-direction: column 
+            width: 100%
+            height: 100%
+            margin: 0 auto
+            position: absolute
+            z-index: 2
+                    
+            .present-btn
+                width: 100px
+                height: 100px
+                margin: 0 auto 2.29%
+                padding: 0
+                background-color: rgba(0, 0, 0, 0.2)
+                border-radius: 50%
+                outline: none
+                border: none
+                                
+                .present-icon
+                    display: block
+                    margin: auto
+                    width: 70%
+                    height: 70%                    
+                    fill: #fff
+                    
+            .present-btn:hover
+                background-color: rgba(0, 0, 0, 0.7)
+                
+            .present-btn:hover .present-icon
+                fill: #c7b299
+                
+            .present-btn:active
+                background-color: rgba(0, 0, 0, 0.2)
+                
+            .present-btn:active .present-icon
+                fill: #fff
+                    
+            .present-title
+                display: block
+                margin: 0 auto 1.41%
+                width: 19.9%
+                text-align: center
+                font-family: Raleway
+                font-size: 30px
+                font-weight: 500
+                color: #fff
+                
+            .present-txt
+                margin: 0 auto 2.03%
+                width: 29.2%
+                text-align: center
+                font-family: Montserrat
+                font-size: 16px
+                font-weight: 300
+                line-height: 1.75
+                color: #fff
+                
+            .present-time
+                display: block
+                margin: 0 auto
+                width: 1.9%
+                text-align: center
+                font-family: Montserrat
+                font-size: 14px
+                color: #c7b299
+             
+    .mobile
+        width: 100%
+        margin: 0 auto
+        padding: 9.84% 0 0 0
+        box-sizing: border-box
+        background-image: url(../img/iPhone-in-hand.png)
+        background-repeat: no-repeat
+        background-size: auto 88.2%
+        background-position: 22% bottom
+        background-color: #fbfaf8  
+        
+            
+        .mobile-title
+            display: block
+            margin: 0 0 1.72% 44%
+            width: 34.6%             
+            font-family: Raleway
+            font-size: 30px
+            font-weight: 600
+            text-align: left
+            color: #555            
+            
+        .mobile-txt
+            width: 34.6%
+            margin: 0 0 2.29% 44%
+            padding: 0
+            font-family: Montserrat
+            font-size: 16px
+            font-weight: 300
+            line-height: 1.60
+            text-align: left
+            color: #8c8c8c
+        
+        .wrp-mobile-detail
+            min-height: 295px
+            width: 100%
+            margin: 0 auto
+                        
+        .mobile-detail
+            width: 34.6%
+            margin: 0 0 0 44%
+            padding: 0 0 0 5.2%
+            font-family: Montserrat
+            font-size: 16px
+            font-weight: 300
+            text-align: left
+            line-height: 2
+            color: #8c8c8c                       
+            
+            .mobile-detail-p
+                margin: 0
+            
+            .mobile-summary
+                cursor: pointer
+                outline-style: none  
+                position: relative
+                
+            .mobile-summary::-webkit-details-marker
+                display: none
+                
+            .mobile-summary::-moz-details-marker
+                display: none
+                
+            .mobile-summary::-ms-details-marker
+                display: none              
+                
+            .mobile-summary:before
+                display: block
+                width: 21px
+                height: 21px
+                border-radius: 50%
+                content: ""
+                background-image: url(../img/arr.svg)
+                background-repeat: no-repeat
+                background-size: cover
+                position: absolute
+                left: -59px
+                top: 4px
+                
+        .mobile-detail[open] .mobile-summary:before
+                transform: rotate(90deg)
+            
+        .mobile-detail:hover
+            color: #555
+            
+        .mobile-detail:active
+            color: #8c8c8c
+            
+    .stat
+        width: 100%
+        margin: 0 auto
+        padding: 3.59% 25% 4.79% 25%
+        box-sizing: border-box
+        display: flex
+        justify-content: space-between
+        background-image: linear-gradient(to right, #211b19, #4e3427)
+        
+        .stat-item
+            display: flex
+            flex-direction: column
+            align-content: space-between
+            align-items: center
+            text-decoration: none
+            width: 20%
+            position: relative
+            
+            .stat-item-icon
+                fill: #c7b299
+                margin: 0 0 10.56% 0
+            
+            .stat-item-title
+                color: #fff
+                font-family: Montserrat
+                font-size: 48px
+                font-weight: 200
+                text-align: center                
+                margin: 0 0 4.56% 0
+                
+            .stat-item-txt
+                color: #c7b299
+                font-family: Montserrat
+                font-size: 14px
+                font-weight: 300
+                text-align: center
+                text-transform: uppercase
+                
+        .stat-item:after
+            content: ""
+            display: block
+            width: 30px
+            height: 2px
+            background-color: #fff
+            position: absolute
+            top: 110%
+            
+        .stat-item:hover .stat-item-icon
+            fill: #fff
+        
+        .stat-item:hover .stat-item-title
+            color: #c7b299
+            
+        .stat-item:hover .stat-item-txt
+            color: #fff
+            
+        .stat-item:hover:after
+            background-color: #c7b299
+            
+        .stat-item:active .stat-item-icon
+            fill: #c7b299
+        
+        .stat-itemactiver .stat-item-title
+            color: #fff
+            
+        .stat-item:active .stat-item-txt
+            color: #c7b299
+            
+        .stat-itemactiver:after
+            background-color: #fff
+            
+    .posts
+        width: 100%
+        margin: 0 auto
+        padding: 4.16% 0 4.16% 0
+        box-sizing: border-box
+        
+        .posts-title
+            display: block
+            margin: 0 0 1.46% 0
+            font-family: Raleway
+            font-size: 30px
+            font-weight: 600
+            text-align: center
+            color: #555555
+            
+        .posts-txt
+            width: 37.4%
+            margin: 0 auto 2.08%
+            font-family: Montserrat
+            font-size: 16px
+            font-weight: 300
+            text-align: center
+            color: #8c8c8c
+            line-height: 1.75
+            
+        .wrp-posts-article
+            width: 100%
+            margin: 0 auto 2.08%
+            display: flex
+            justify-content: center
+            
+            .posts-article
+                width: 19.3%
+                margin: 0 1.6% 0 0                
+                display: flex
+                flex-direction: column
+                border: solid 1px #f8f8f8
+                position: relative
+            
+                .posts-article-img
+                    display: block
+                    width: 100%                    
+                
+                .wrp-posts-article-text
+                    
+                .posts-article-title
+                    display: block
+                    padding: 7.8% 0 0 7.8%
+                    box-sizing: border-box
+                    text-align: left
+                    font-family: Raleway
+                    font-size: 20px
+                    font-weight: 500
+                    color: #555
+                    
+                .posts-article-txt
+                    margin: 0
+                    padding: 4.8% 7.8% 0 7.8%
+                    box-sizing: border-box
+                    text-align: left
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 300
+                    color: #8c8c8c
+                    
+                .posts-article-link
+                    display: block
+                    margin: 7.8% 0 7.8% 7.8%
+                    width: 130px
+                    text-decoration: none
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 300
+                    color: #c7b299
+                    position: relative
+                    
+                .posts-article-link:after
+                    content: ""
+                    border: 5px solid transparent
+                    border-left: 5px solid #c7b299
+                    position: absolute
+                    top: 18%
+                    left: 90px
+                    
+                .posts-article-link:hover
+                    color: #fff
+                    
+                .posts-article-link:active
+                    color: #c7b299
+                    
+                .posts-article-link:hover:after
+                    border-left: 5px solid #fff
+                    
+                .posts-article-link:active:after
+                    border-left: 5px solid #c7b299
+                    
+                .post-article-date
+                    width: 13.5%
+                    position: absolute
+                    top: 5.4%
+                    left: 5.4%
+                    
+                    .post-article-date-fig
+                        display: block
+                        width: 100%
+                        padding: 8.7% 0 0 0
+                        box-sizing: border-box
+                        background-color: #363636
+                        font-family: Montserrat
+                        font-size: 24px
+                        font-weight: 300
+                        color: #fff
+                        text-align: center
+                        
+                    .post-article-date-mounth
+                        display: block
+                        width: 100%
+                        padding: 11.7% 0 11.7% 0
+                        box-sizing: border-box
+                        background-color: #252525
+                        font-family: Roboto
+                        font-size: 12px
+                        color: #fff
+                        text-align: center
+                        
+            .posts-article:last-child
+                margin: 0
+                       
+            .posts-article:hover .posts-article-img            
+                filter: brightness(30%)
+                
+                
+            .posts-article:hover .wrp-posts-article-text
+                background-color: #362f2d
+                
+            .posts-article:hover .posts-article-title
+                color: #c7b299
+                background-color: #362f2d
+                
+            .posts-article:hover .posts-article-txt
+                color: #fff
+                background-color: #362f2d
+                
+            .posts-article:hover .posts-article-link
+                background-color: #362f2d 
+                
+            .posts-article:hover .post-article-date-fig
+                background-color: #c7b299
+               
+            .posts-article:hover .post-article-date-mounth               
+                background-color: #a48d72
+          
+        .wrp-posts-button
+            margin: 0 auto
+            width: 100%
+            display: flex
+            justify-content: center            
+            
+        .posts-btn
+            padding: 0
+            width: 1.2%            
+            border: 0 
+            outline: none
+            background-color: transparent
+                                
+            .posts-btn-icon
+                display: block
+                margin: 0 auto                
+                fill: #d1d1d1
+            
+            .posts-btn-icon:hover
+                fill: #c7b299
+                
+            .posts-btn-icon:active
+                fill: #d1d1d1
+                
+        .posts-btn:nth-of-type(1)
+            margin-right: 1%
+                
+    .logos
+        width: 100%
+        min-height: 489px
+        margin: 0 auto
+        background-image: url(../img/bg-photo-logo.jpg)
+        background-size: cover
+        background-repeat: no-repeat
+        display: flex
+        justify-content: center
+        align-items: center
+        
+        .logos-link
+            display: block
+            margin: 0 4.7% 0 0
+            text-decoration: none                    
+            
+        .logos-link:last-child
+            margin: 0
+            
+        .logos-link:hover .logos-img
+            filter: brightness(30%)
+            
+        .logos-img
+            display: block
+            width: 100%
+            
+.main-footer
+    width: 100%
+    margin: 0 auto
+    
+    .footer-first
+        margin: 0 auto
+        padding: 4.16% 19.5%
+        box-sizing: border-box
+        width: 100%
+        display: flex
+        justify-content: center
+        background-color: #191919
+        
+        .footer-company
+            width: 23.5%
+            margin-right: 2%
+            
+            .footer-company-link
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 100%
+                text-decoration: none
+                padding-right: 37%
+                box-sizing: border-box
+                
+                .footer-company-logo
+                    fill: #fff
+   
+                .footer-company-logo-txt                    
+                    font-family: Raleway
+                    font-size: 34px
+                    text-align: right
+                    color: #fff
+                    letter-spacing: -1.36px           
+                    
+            .footer-company-link:hover .footer-company-logo
+                fill: #c7b299
+                
+            .footer-company-link:hover .footer-company-logo-txt
+                color: #c7b299
+                
+            .footer-company-link:active .footer-company-logo
+                fill: #fff
+                
+            .footer-company-link:active .footer-company-logo-txt
+                color: #fff
+                    
+            .footer-company-txt
+                font-family: Montserrat
+                font-size: 14px
+                font-weight: 300
+                text-align: left
+                hyphens: auto
+                color: #555
+                line-height: 1.71
+                margin: 9% 0% 9% 0
+                
+            .footer-company-link-bottom
+                text-decoration: none
+                font-family: Montserrat
+                font-size: 14px
+                text-align: left
+                color: #d1d1d1
+                position: relative
+                
+            .footer-company-link-bottom:after
+                content: ""
+                border: 5px solid transparent
+                border-left: 5px solid #d1d1d1
+                position: absolute
+                top: 4px
+                left: 83px
+                
+            .footer-company-link-bottom:hover
+                color: #c7b299
+                
+            .footer-company-link-bottom:hover:after
+                border-left: 5px solid #c7b299
+                
+            .footer-company-link-bottom:active
+                color: #d1d1d1
+                
+            .footer-company-link-bottom:active:after
+                border-left: 5px solid #c7b299
+                
+        .footer-post
+            width: 23.5%
+            margin: 2% 2% 0 0
+            
+            .footer-post-title
+                font-family: Raleway
+                font-size: 24px
+                font-weight: bold
+                text-align: left
+                color: #fff
+                
+            .footer-post-link
+                display: block
+                text-decoration: none
+                border-bottom: 1px solid #363636
+                margin: 6% 0 0 0
+                    
+                .footer-post-time
+                    font-family: Montserrat
+                    font-size: 12px
+                    font-weight: 300
+                    text-align: left
+                    color: #363636
+                    
+                .foter-post-txt
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 300
+                    text-align: left
+                    color: #555
+                    line-height: 1.43
+                    margin: 2% 0% 6% 0%
+                    
+            .footer-post-link:hover .foter-post-txt
+                color: #c7b299
+                
+            .footer-post-link:hover .footer-post-time
+                color: #fff  
+                
+            .footer-post-link:active .foter-post-txt
+                color: #555
+                
+            .footer-post-link:active .footer-post-time
+                color: #363636
+                    
+        .footer-twit
+            width: 23.5%
+            margin: 2% 2% 0 0
+            
+            .footer-twit-title
+                font-family: Raleway
+                font-size: 24px
+                font-weight: bold
+                text-align: left
+                color: #fff
+                
+            .footer-twit-link
+                display: block
+                text-decoration: none
+                border-bottom: 1px solid #363636
+                padding: 0% 0% 6% 0
+                box-sizing: border-box
+                
+                .footer-twit-txt
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 300
+                    text-align: left
+                    color: #555
+                    margin: 6% 0% 2% 0%
+                    line-height: 1.43
+                    
+                    .footer-twit-txt-sp1
+                        font-family: Montserrat
+                        font-size: 14px
+                        font-weight: 300
+                        text-align: left
+                        color: #00bff3
+                        
+                    .footer-twit-txt-sp2
+                        font-family: Montserrat
+                        font-size: 14px
+                        font-weight: 300
+                        text-align: left
+                        color: #00bff3
+                        
+                    .footer-twit-txt-link
+                        text-decoration: none
+                        color: #959595
+                        
+                    
+                .footer-twit-time
+                    font-family: Montserrat
+                    font-size: 12px
+                    font-weight: 300
+                    text-align: left
+                    color: #363636      
+                    
+            .footer-twit-link:hover .footer-twit-txt
+                color: #c7b299
+                
+            .footer-twit-link:hover .footer-twit-time
+                color: #fff   
+                
+            .footer-twit-link:active .footer-twit-txt
+                color: #555
+                
+            .footer-twit-link:active .footer-twit-time
+                color: #363636  
+                    
+                    
+        .footer-widget
+            width: 23.5%
+            margin: 2% 0 0 0
+                    
+            .footer-widget-title
+                font-family: Raleway
+                font-size: 24px
+                font-weight: bold
+                text-align: left
+                color: #fff
+                
+            .wrp-footer-widget
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                align-content: space-between
+                min-height: 210px
+                margin-top: 6%
+                
+            .footer-widget-link
+                display: block
+                margin: 0
+                width: 48%
+                min-height: 98px
+                
+                .footer-widget-fig
+                    margin: 0 auto
+                    
+                    .footer-widget-img
+                        display: block
+                        margin: 0 auto
+                        width: 100%
+                        height: 100%
+                        
+            .footer-widget-link:hover
+                filter: brightness(50%)
+                
+            .footer-widget-link:active
+                filter: brightness(100%)
+                
+    .footer-last
+        margin: 0 auto
+        width: 100%
+        padding: 2.39% 19.5% 2.39% 19.5%
+        box-sizing: border-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background-color: #111
+        
+        .left-link
+            width: 40%       
+            
+            .left-link-item
+                color: #555
+                font-family: Montserrat
+                font-size: 13px
+                font-weight: 300
+                line-height: 1.54
+                text-align: left
+                text-decoration: none
+                border-right: 1px solid #555
+                padding: 0% 3% 0% 0%
+                box-sizing: border-box
+                margin: 0 0 0 3%
+                
+                .left-link-item-wax
+                    color: #959595
+                    
+            .left-link-item:nth-of-type(3)
+                color: #959595
+                
+            .left-link-item:last-child
+                border-right: none
+                padding: 0
+                
+            .left-link-item:first-child
+                margin: 0
+                
+            .left-link-item:hover
+                color: #c7b299
+            .left-link-item:hover .left-link-item-wax
+                color: #c7b299
+                
+            .left-link-item:active
+                color: #fff
+                
+            .left-link-item:active .left-link-item-wax
+                color: #fff
+                    
+        .right-link
+            width: 30%
+            
+            .right-link-item
+                color: #555
+                font-family: Montserrat
+                font-size: 13px
+                font-weight: 300
+                line-height: 1.54
+                text-align: left
+                text-decoration: none
+                border-right: 1px solid #555
+                padding: 0 3% 0 0
+                box-sizing: border-box
+                margin: 0 0 0 3%                
+                                
+                .right-link-them
+                    color: #959595
+                    
+                .right-link-env
+                    color: #959595
+                    
+            .right-link-item:last-child
+                border-right: none
+                padding: 0
+                
+            .right-link-item:first-child
+                margin: 0
+            
+            .right-link-item:hover
+                color: #c7b299
+                
+            .right-link-item:hover .right-link-them
+                color: #c7b299
+                
+            .right-link-item:hover .right-link-env
+                color: #c7b299
+                
+            .right-link-item:active
+                color: #fff
+                
+            .right-link-item:active .right-link-them
+                color: #fff
+                
+            .right-link-item:active .right-link-env
+                color: #fff
+                
+    
+/*Mobile version*/            
 
     
-
-
-
-
+@media (max-width: 605px)
+    
+            
+    .main-header
+        background-image: url(../img/bg-photo-logo-min.jpg)
+        min-height: 100px
+        width: 100%
+        padding: 2.08% 4% 2.08% 4%
+        margin: 0 auto
+        display: flex        
+        
+        .main-header-wrp
+            margin: 0 auto
+            width: 100%
+            justify-content: space-between
+            position: relative
+            
+            .main-header-logo
+                margin: 0
+                    
+        .main-header-slider
+            display: none
+            
+        .wrp-cart-search
+            display: none           
+        
+        .main-header-menu
+            display: none                    
+            /*visibility: hidden
+            /*height: 0
+            /*width: 0             
+            
+            /*.main-header-menu-link
+                height: 0
+                width: 0
+                margin: 0
+                padding: 0                     
+    
+    .main-menu-label-mobile
+        display: block
+        width: 64px
+        height: 50px
+        border-radius: 3px
+        background-color: #fff
+        cursor: pointer
+        color: #333
+        padding: 10px
+        box-sizing: border-box
+        position: absolute
+        top: 18%
+        right: 0%        
+        
+        .upper, 
+        .middle, 
+        .bottom
+            display: block
+            background-color: #333
+            height: 3px
+            width: 80%
+            margin: 6px auto
+            transform-origin: top right
+            transition: 0.3s ease-out
+            
+    .main-menu-label-mobile:hover
+        background-color: #ccc
+    
+    .main-menu-label-mobile:active
+        background-color: #fff
+        
+    .main-menu-check-mobile:checked ~ .main-header-menu
+        /*visibility: visible
+        display: flex
+        width: 40%
+        min-height: 300px
+        transition: min-height 0.8s linear
+        margin: 0
+        flex-direction: column        
+        background-color: rgba(0, 0, 0, .8)
+        border-radius: 5px
+        position: absolute
+        top: 119%
+        right: 0
+        
+    .main-menu-check-mobile:checked ~ .main-header-menu > .main-header-menu-link
+        display: block
+        width: 100%
+        height: 10%
+        line-height: 2.5
+        
+    .main-menu-check-mobile:checked ~ .main-header-menu > .main-header-menu-link:hover
+        background-color: rgba(0, 0, 0, 1)
+        
+    .main-menu-check-mobile:checked ~ .main-menu-label-mobile > .middle
+        opacity: 0
+        
+    .main-menu-check-mobile:checked ~ .main-menu-label-mobile > .upper
+        transform: rotate(-45deg) translate(-3px,-7px)
+        height: 5px    
+        
+    .main-menu-check-mobile:checked ~ .main-menu-label-mobile > .bottom
+        transform: rotate(45deg) translate(-1px,4px)
+        height: 5px
+        
+                    
+    .main-content
+                
+        .direct
+                        
+            .wrp-direct
+                flex-wrap: wrap
+                align-content: space-between
+                padding: 0px 0 34px 0
+                min-height: 550px
+                
+                .direct-item
+                    width: 50%
+                    
+            .wrp-direct-desc
+                display: none
+                
+        .purchase
+            display: none
+            
+        .latest-proj 
+            .latest-proj-txt
+                width: 100%
+                
+            .latest-proj-menu
+                display: none
+                
+            .wrp-latest-proj
+                min-height: 465px
+                padding: 40px 16.6%
+                
+                .latest-proj-item
+                    width: 170px
+                    margin: 0 auto
+                                        
+                    .latest-proj-item-img
+                        width: 170px
+                        height: auto
+                        
+                    .wrp-latest-proj-button        
+                        min-height: 80px
+                    
+                        .latest-proj-item-title
+                            padding: 12px 0 0 12px
+                            font-size: 13px
+                                        
+                        .latest-proj-item-txt
+                            padding: 10px 0 12px 12px
+                            font-size: 12px
+                        
+                .latest-proj-item:nth-of-type(5)
+                    display: none
+                    
+                .latest-proj-item:nth-of-type(6)
+                    display: none
+                        
+                        
+                
+                    
+            .latest-proj-btn
+                display: none
+                
+                
+        .present
+            min-height: 472px
+            
+            .present-video
+                object-fit: inherit
+                
+            .wrp-present 
+                .present-title
+                    width: 63.9%
+                    
+                .present-txt
+                    width: 94.2%
+                    
+        .mobile
+            background-size: auto 56.2%
+            background-position: 7% bottom
+            
+            .mobile-title
+                margin: 0 auto 1.72%
+                width: 68.6%
+                
+            .mobile-txt
+                width: 92.6%
+                margin: 0 auto 2.29%
+                text-align: justify
+                font-size: 14px
+                
+            .mobile-detail
+                width: 50.6%
+                padding: 0 0 0 4.2%
+                font-size: 12px
+                
+                .mobile-summary:before
+                    width: 19px
+                    height: 19px
+                    left: -32px
+                    top: 1px
+        .stat
+            padding: 3.59% 3% 5.79% 3%
+            
+            .stat-item:last-of-type
+                display: none
+                
+            .stat-item:nth-of-type(2)
+                display: none
+            
+        .posts 
+            .posts-txt
+                width: 99%
+                font-size: 14px
+                
+            .wrp-posts-article
+                justify-content: space-between
+                flex-direction: column
+                align-items: center
+                min-height: 1091px
+                margin: 0 auto
+                
+                .posts-article
+                    width: 49.3%
+                    margin: 0
+                    
+            .wrp-posts-button
+                display: none
+                
+        .logos        
+            min-height: 181px
+            padding: 0 5% 0 5%
+            box-sizing: border-box
+            
+    .main-footer 
+        .footer-first
+            display: none
+            
+        .footer-last
+            padding: 9.39% 5.5% 2.39% 5.5%
+            flex-wrap: wrap
+            
+            .left-link
+                width: 95%
+                min-height: 20px
+                margin: 0 auto 5%
+                display: flex
+                justify-content: center
+                
+                .left-link-item
+                    display: block
+                    padding: 0 3% 0 0
+                    margin: 0 0 0 3%
+                    width: 25%
+                    
+                .left-link-item:last-of-type
+                    padding: 0
+                    
+                .left-link-item:first-of-type
+                    margin: 0
+                    width: 36%
+                    
+                .left-link-item:nth-of-type(3)
+                    width: 10%
+                
+            .right-link
+                width: 80%
+                margin: 0 auto
+                min-height: 20px
+                display: flex
+                justify-content: center
+                
+                .right-link-item
+                    margin: 0
+                    padding: 0 3% 0 0
+                    width: 40%
+                    
+                .right-link-item:last-of-type
+                    padding: 0
+                    margin: 0 0 0 3%
+                    width: 40%
+                    
