@@ -671,6 +671,7 @@
         margin: 0; }
       .main-content .mobile .mobile-detail .mobile-summary {
         cursor: pointer;
+        outline: none;
         outline-style: none;
         position: relative; }
       .main-content .mobile .mobile-detail .mobile-summary::-webkit-details-marker {
