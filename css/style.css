@@ -76,6 +76,7 @@
   .main-header .main-header-menu {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 2% 0 0;
     padding: 0;
     width: 40%; }
@@ -85,18 +86,22 @@
       font-size: 14px;
       font-weight: 300;
       text-align: center;
-      color: #fff; }
+      color: #fff;
+      margin-right: 1%; }
     .main-header .main-header-menu .main-header-menu-link:hover {
       color: #c7b299; }
     .main-header .main-header-menu .main-header-menu-link:active {
       color: #fff; }
+    .main-header .main-header-menu .main-header-menu-link:last-of-type {
+      margin-right: 0; }
   .main-header .wrp-cart-search {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 3.65%; }
     .main-header .wrp-cart-search .main-header-cart {
-      display: block; }
+      display: block;
+      margin-right: 60%; }
       .main-header .wrp-cart-search .main-header-cart .main-header-cart-icon {
         fill: #fff; }
       .main-header .wrp-cart-search .main-header-cart .main-header-cart-icon:hover {
@@ -167,7 +172,7 @@
         line-height: 1.5; }
       .main-header .main-header-slider .main-header-slider-wrp .main-header-slider-btn {
         display: block;
-        width: 28.86%;
+        width: 170px;
         min-height: 53px;
         margin: 52px auto 0 auto;
         box-sizing: border-box;
@@ -192,7 +197,7 @@
         color: #fff;
         box-shadow: inset 0px -3px 0 0 #736357; }
     .main-header .main-header-slider .main-header-slider-pag {
-      width: 5.5%;
+      width: 100px;
       display: flex;
       justify-content: space-between;
       position: absolute;
@@ -201,6 +206,7 @@
         display: block;
         width: 11px;
         height: 11px;
+        margin-right: 2px;
         border-radius: 50%;
         background-color: #d3c1ad;
         border: 2px solid transparent; }
@@ -255,13 +261,15 @@
       margin: 0 0 0 24.8%; }
 
 .main-content {
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
   .main-content .direct {
     width: 100%;
     margin: 0 auto; }
     .main-content .direct .wrp-direct {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       width: 100%;
       margin: 0 auto;
       padding: 80px 0 80px 0;
@@ -270,7 +278,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 14%;
+        width: 230px;
         padding: 10px 10px 0 10px;
         box-sizing: border-box;
         text-decoration: none; }
